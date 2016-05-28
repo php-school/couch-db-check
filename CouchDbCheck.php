@@ -120,7 +120,7 @@ class CouchDbCheck implements ListenableCheckInterface
             $doc = $row['doc'];
 
             $data = array_filter($doc, function ($key) {
-                return !in_array($key, ['_id', '_key']);
+                return !in_array($key, ['_id', '_rev']);
             }, ARRAY_FILTER_USE_KEY);
 
             try {
