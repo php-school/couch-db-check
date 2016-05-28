@@ -53,8 +53,6 @@ class CouchDbCheck implements ListenableCheckInterface
      */
     public function attach(EventDispatcher $eventDispatcher)
     {
-        //we log requests performed in the seed method to the user database, so we can replicate
-        //them on the solution database.
         $studentClient = CouchDBClient::create(['dbname' => static::$studentDb]);
         $solutionClient = CouchDBClient::create(['dbname' => static::$solutionDb]);
 
