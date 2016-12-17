@@ -126,8 +126,7 @@ class CouchDbCheck implements ListenableCheckInterface
             try {
                 $solutionClient->putDocument(
                     $data,
-                    $doc['_id'],
-                    $doc['_rev']
+                    $doc['_id']
                 );
             } catch (HTTPException $e) {
             }
