@@ -5,7 +5,7 @@
     "homepage": "https://www.phpschool.io",
     "require": {
         "php": ">=5.6",
-        "php-school/php-workshop": "^1.0",
+        "php-school/php-workshop": "^1.0 | ^2.0",
         "doctrine/couchdb": "^1.0@beta"
     },
     "autoload": {
